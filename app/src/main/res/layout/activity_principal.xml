@@ -30,6 +30,8 @@
             android:layout_width="257dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:backgroundTint="@color/my_secundary"
+            android:textColor="@color/white"
             android:text="Iniciar Sesion" />
 
         <Space
@@ -41,6 +43,8 @@
             android:layout_width="259dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:backgroundTint="@color/my_secundary"
+            android:textColor="@color/white"
             android:text="Registrate" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
