@@ -82,6 +82,7 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idTxtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -97,10 +98,11 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idTxtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:hint="Correo"/>
+                android:hint="Correo"
+                android:inputType="textEmailAddress" />
 
             <View
                 android:layout_width="wrap_content"
@@ -114,10 +116,11 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idTxtPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Contraseña"/>
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
 
             <View
                 android:layout_width="wrap_content"
@@ -131,16 +134,18 @@
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idTxtPass2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:hint="Contraseña"/>
+                android:hint="Contraseña"
+                android:inputType="textPassword" />
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/idBtnRegistar"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Registrar"
