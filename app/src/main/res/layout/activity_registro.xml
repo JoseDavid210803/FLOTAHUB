@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/img">
 
     <RelativeLayout
@@ -11,8 +11,8 @@
         android:layout_height="match_parent"
         android:background="@color/my_primary"
         android:alpha="0.3">
-
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,8 +26,8 @@
             android:layout_height="130dp"
             android:scrollbarSize="4dp"
             android:src="@drawable/logo">
-
         </ImageView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +36,6 @@
             android:fontFamily="sans-serif-medium"
             android:textSize="30dp"
             android:textColor="@color/white">
-
         </TextView>
 
     </LinearLayout>
@@ -68,7 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:alpha="0.7"
-                android:text="Por favor complete los campos" />
+                android:text="Por favor complete los campos"
+                android:textColor="@color/black"/>
 
             <View
                 android:layout_width="wrap_content"
@@ -79,12 +79,19 @@
                 android:layout_height="wrap_content"
                 android:alpha="0.7"
                 android:text="Nombre Completo"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/idTxtName"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nombreCompleto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:textColorHint="@color/my_secundary"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <View
                 android:layout_width="wrap_content"
@@ -93,16 +100,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:alpha="0.7"
                 android:text="Correo Electronico"
+                android:textColor="@color/black"
+                android:alpha="0.7"
                 android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/idTxtEmail"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Correo"
-                android:inputType="textEmailAddress" />
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/correoElectronico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correo"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@color/my_secundary"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <View
                 android:layout_width="wrap_content"
@@ -111,16 +124,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:alpha="0.7"
                 android:text="Contraseña"
+                android:textColor="@color/black"
+                android:alpha="0.7"
                 android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/idTxtPass"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Contraseña"
-                android:inputType="textPassword" />
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/my_secundary"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <View
                 android:layout_width="wrap_content"
@@ -129,23 +148,29 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:alpha="0.7"
                 android:text="Confirmar Contraseña"
+                android:textColor="@color/black"
+                android:alpha="0.7"
                 android:textStyle="bold" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/idTxtPass2"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Contraseña"
-                android:inputType="textPassword" />
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmarContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirmar Contraseña"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/my_secundary"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/idBtnRegistar"
+                android:id="@+id/btnRegistrar"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="Registrar"

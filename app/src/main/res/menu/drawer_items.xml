@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grupo1">
+        <item
+            android:id="@+id/navInicio"
+            android:title="Inicio"/>
+    </group>
+
+    <group android:id="@+id/grupo2">
+        <item
+            android:icon="@drawable/notificacion"
+            android:id="@+id/navAlerts"
+            android:title="Notificaciones"/>
+
+        <item
+            android:icon="@drawable/seguro"
+            android:id="@+id/navSeguro"
+            android:title="Seguros"/>
+
+        <item
+            android:icon="@drawable/mantenimiento"
+            android:id="@+id/navMante"
+            android:title="Mantenimiento"/>
+    </group>
+
+    <group android:id="@+id/grupo3">
+        <item
+            android:icon="@drawable/adeudos"
+            android:id="@+id/navAdeudos"
+            android:title="Adeudos"/>
+
+        <item
+            android:icon="@drawable/vehiculos"
+            android:id="@+id/navVehiculos"
+            android:title="Vehiculos"/>
+
+        <item
+            android:icon="@drawable/choferes"
+            android:id="@+id/navChoferes"
+            android:title="Choferes"/>
+    </group>
+
+    <group android:id="@+id/grupo4">
+        <item
+            android:id="@+id/navSalir"
+            android:title="Salir"/>
+    </group>
+</menu>

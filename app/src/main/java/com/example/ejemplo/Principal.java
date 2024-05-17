@@ -21,7 +21,8 @@ public class Principal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // Iniciar la nueva actividad
-                Intent intent = new Intent(Principal.this, Login.class);
+                Intent intent;
+                intent = new Intent(Principal.this, Login.class);
                 startActivity(intent);
             }
         });
