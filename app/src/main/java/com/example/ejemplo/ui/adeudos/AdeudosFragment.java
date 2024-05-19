@@ -1,4 +1,4 @@
-package com.example.ejemplo.ui.gallery;
+package com.example.ejemplo.ui.adeudos;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,9 +18,9 @@ import com.example.ejemplo.R;
 
 import java.util.List;
 
-public class GalleryFragment extends Fragment {
+public class AdeudosFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private AdeudosViewModel adeudosViewModel;
     private TextView textView;
     private ListView listView;
 
@@ -29,24 +29,24 @@ public class GalleryFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View root = inflater.inflate(R.layout.fragment_adeudos, container, false);
 
-        textView = root.findViewById(R.id.text_gallery);
-        listView = root.findViewById(R.id.listview_notifications);
+        textView = root.findViewById(R.id.text_adeudos);
+        listView = root.findViewById(R.id.listview_adeudos);
 
-        galleryViewModel = new ViewModelProvider(this).get(GalleryViewModel.class);
+        adeudosViewModel = new ViewModelProvider(this).get(AdeudosViewModel.class);
 
-        galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        adeudosViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(String s) {
                 textView.setText(s);
             }
         });
 
-        galleryViewModel.getNotificationsList().observe(getViewLifecycleOwner(), new Observer<List<String>>() {
+        adeudosViewModel.getAdeudosList().observe(getViewLifecycleOwner(), new Observer<List<String>>() {
             @Override
-            public void onChanged(List<String> notifications) {
-                ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, notifications);
+            public void onChanged(List<String> adeudos) {
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, adeudos);
                 listView.setAdapter(adapter);
             }
         });

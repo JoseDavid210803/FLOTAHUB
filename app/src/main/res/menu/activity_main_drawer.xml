@@ -10,11 +10,35 @@
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:icon="@drawable/notificacion"
+            android:title="Notificaciones" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:icon="@drawable/seguro"
+            android:title="Seguros" />
+        <item
+            android:icon="@drawable/mantenimiento"
+            android:id="@+id/navMante"
+            android:title="Mantenimiento"/>
+
+        <item
+            android:icon="@drawable/adeudos"
+            android:id="@+id/navAdeudos"
+            android:title="Adeudos"/>
+
+        <item
+            android:icon="@drawable/vehiculos"
+            android:id="@+id/navVehiculos"
+            android:title="Vehiculos"/>
+        <item
+            android:icon="@drawable/choferes"
+            android:id="@+id/navChoferes"
+            android:title="Choferes"/>
+
+        <item
+            android:id="@+id/navSalir"
+            android:title="Salir"
+            android:icon="@drawable/ic_menu_camera"/>
     </group>
+
 </menu>

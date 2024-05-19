@@ -22,4 +22,24 @@
         android:name="com.example.ejemplo.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/navVehiculos"
+        android:name="com.example.ejemplo.ui.vehiculos.VehiculosFragment"
+        android:label="fragment_vehiculos"
+        tools:layout="@layout/fragment_vehiculos" />
+    <fragment
+        android:id="@+id/navAdeudos"
+        android:name="com.example.ejemplo.ui.adeudos.AdeudosFragment"
+        android:label="fragment_adeudos"
+        tools:layout="@layout/fragment_adeudos" />
+    <fragment
+        android:id="@+id/navChoferes"
+        android:name="com.example.ejemplo.ui.choferes.ChoferesFragment"
+        android:label="fragment_choferes"
+        tools:layout="@layout/fragment_choferes" />
+    <fragment
+        android:id="@+id/navMante"
+        android:name="com.example.ejemplo.ui.mantenimiento.MantenimientoFragment"
+        android:label="fragment_mantenimiento"
+        tools:layout="@layout/fragment_mantenimiento" />
 </navigation>
